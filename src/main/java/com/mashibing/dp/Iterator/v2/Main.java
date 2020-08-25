@@ -34,7 +34,9 @@ class LinkedList_ {
             tail = n;
         }
 
+        //将原来的尾部指向新增的元素
         tail.next = n;
+        //把新增的元素设为新的尾部
         tail = n;
         size++;
     }

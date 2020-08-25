@@ -1,8 +1,9 @@
 package com.mashibing.dp.cglib;
 
-import net.sf.cglib.proxy.Enhancer;
-import net.sf.cglib.proxy.MethodInterceptor;
-import net.sf.cglib.proxy.MethodProxy;
+import org.springframework.cglib.proxy.Callback;
+import org.springframework.cglib.proxy.Enhancer;
+import org.springframework.cglib.proxy.MethodInterceptor;
+import org.springframework.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 import java.util.Random;
@@ -15,7 +16,7 @@ public class Main {
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(Tank.class);
         enhancer.setCallback(new TimeMethodInterceptor());
-        Tank tank = (Tank)enhancer.create();
+        Tank tank = (Tank) enhancer.create();
         tank.move();
     }
 }

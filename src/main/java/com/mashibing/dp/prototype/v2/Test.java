@@ -24,6 +24,7 @@ class Person implements Cloneable {
     int score = 100;
 
     Location loc = new Location("bj", 22);
+
     @Override
     public Object clone() throws CloneNotSupportedException {
         Person p = (Person)super.clone();

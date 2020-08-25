@@ -1,8 +1,8 @@
 package com.mashibing.dp.ASM;
 
-import org.objectweb.asm.ClassWriter;
+import aj.org.objectweb.asm.ClassWriter;
 
-import static org.objectweb.asm.Opcodes.*;
+import static aj.org.objectweb.asm.Opcodes.*;
 
 public class ClassWriteTest {
     public static void main(String[] args) {
